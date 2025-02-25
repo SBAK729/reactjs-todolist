@@ -4,6 +4,9 @@ export default function TodoCard(props) {
   const { children, index, handleDeleteTodo, handleEditTodo } = props;
   return (
     <li className="todoItem">
+      <div>
+        <input type="checkbox" />
+      </div>
       {children}
       <div className="actionsContainer">
         <button
